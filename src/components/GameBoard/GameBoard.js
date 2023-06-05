@@ -7,8 +7,8 @@ export const GameBoard = () => {
   const [playerID, setPlayerID] = useState('');
 
   useEffect(() => {
-    console.log('gameboard mounted')
     setPlayerID(Date.now().toString())
+    console.log(`gameboard mopunted for player ${playerID}`)
   }, []);
 
   return(
